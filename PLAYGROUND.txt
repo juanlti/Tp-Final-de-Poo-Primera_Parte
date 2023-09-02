@@ -1,0 +1,192 @@
+|unaEmpresa clienteN1  clienteN2 clienteN3 fechaInicio fechaFin f1 f2 f3 f4 collFechaViajeOrganizado1 collFechaViajeOrganizado2 collFechaViajeOrganizado3 fechaConUnCupo1 fechaConUnCupo2 fechaConUnCupo3 fechaConUnCupo4 fechaConUnCupo5 unViajeEspecial01 unViajeEspecial02 unViajeOrganizado01 unViajeOrganizado02 unViajeOrganizado03 unViajeEspecial03 f5 f6 f7 f8 ContratoN1 ContratoN2 ContratoN3 ContratoN4 ContratoN5 fechaHoy cuotaC1 unaExcursionN1  unaAct1 unaAct2 unaAct3  collAct123 unaAct6 unaAct4 unaAct5 collAct135 unaExcursionN3 etapa1 etapa2 etapa3|
+Transcript clear.
+
+"Variables de uso general "
+fechaInicio:= Date newDay: 8 month: 5 year: 2018.
+
+fechaFin:= Date newDay: 8 month: 5 year: 2022.
+unaEmpresa:= EmpresaTurismo crearUnaEmpresaTurismoConUnNombre:'Al Estrellato'.
+
+f1:=Date newDay: 8 month: 5 year: 2020.
+f2:=Date newDay: 8 month: 5 year: 2021.
+f3:=Date newDay: 12 month:6 year: 2019.
+f4:=Date newDay: 8 month: 7 year: 2023.
+"Fin de Variables de uso general "
+
+"Clientes"
+clienteN1:= Cliente crearClienteConUnNombre: 'Juan' conUnDni: 741 conUnNumeroTelefeno: 2999 conUnaCiudad: 'Neuquen' conUnaInformacion: ''.
+
+clienteN2:= Cliente crearClienteConUnNombre: 'Maria' conUnDni: 852 conUnNumeroTelefeno: 2999 conUnaCiudad: 'Buenos Aires' conUnaInformacion: ''.
+
+clienteN3:= Cliente crearClienteConUnNombre: 'Adrian' conUnDni: 963 conUnNumeroTelefeno: 2999 conUnaCiudad: 'Bariloche' conUnaInformacion: ''.
+
+"Fin de Clientes"
+"Viajes Especiales"
+unViajeEspecial01:=unaEmpresa crearUnViajeEspecialConUnNombre: 'Japon' conUnCostoPorPersona: 5000 conUnImporteImpuesto: 100 conUnNombreCiudad: 'Tokio' conUnaFechaSalida: f1  conUnaFechaRegreso: f2.
+Transcript cr.
+unViajeEspecial02:=unaEmpresa crearUnViajeEspecialConUnNombre: 'EEUU' conUnCostoPorPersona: 10 conUnImporteImpuesto: 1000 conUnNombreCiudad: 'Miami' conUnaFechaSalida: f2  conUnaFechaRegreso: f3.
+Transcript cr.
+unViajeEspecial03:= unaEmpresa crearUnViajeEspecialConUnNombre: 'China' conUnCostoPorPersona: 12 conUnImporteImpuesto: 500 conUnNombreCiudad: 'Pekin' conUnaFechaSalida: f4  conUnaFechaRegreso: f3.
+Transcript cr.
+"Fin Viajes Especiales"
+"Viajes Organizados"
+fechaConUnCupo1:= FechaViajeOrganizado crearUnaFechaDeSalidaDeOrganizacion: f1 conUnCupoDePersona: 10.
+fechaConUnCupo2:= FechaViajeOrganizado crearUnaFechaDeSalidaDeOrganizacion: f2 conUnCupoDePersona: 15.
+fechaConUnCupo3:= FechaViajeOrganizado crearUnaFechaDeSalidaDeOrganizacion: f3 conUnCupoDePersona: 20.
+fechaConUnCupo4:= FechaViajeOrganizado crearUnaFechaDeSalidaDeOrganizacion: f4 conUnCupoDePersona: 20.
+
+collFechaViajeOrganizado1 := OrderedCollection new.
+collFechaViajeOrganizado1 add:fechaConUnCupo1.
+collFechaViajeOrganizado1 add:fechaConUnCupo2.
+collFechaViajeOrganizado1 add:fechaConUnCupo3.
+collFechaViajeOrganizado1 add:fechaConUnCupo4.
+"Crear Actividades "
+
+
+"agrego etapas a los viajes organizados"
+
+unaAct1:=Actividad  crearUnaActividadConUnNombre: 'SalirComer' conUnIdActividad: 1 conUnHorario: 'mediodia'.
+
+unaAct2:=Actividad  crearUnaActividadConUnNombre: 'SalirComprar' conUnIdActividad: 2 conUnHorario: 'mediodia'.
+
+unaAct3:=Actividad  crearUnaActividadConUnNombre: 'SalirNadar' conUnIdActividad: 3 conUnHorario: 'mediodia'.
+
+collAct123:=OrderedCollection new.
+collAct123 add: unaAct1.
+collAct123 add: unaAct2.
+collAct123 add: unaAct3.
+collAct456:=OrderedCollection new.
+
+unaAct4:=Actividad  crearUnaActividadConUnNombre: 'IngresarComer' conUnIdActividad: 1 conUnHorario: 'mediodia'.
+
+unaAct5:=Actividad  crearUnaActividadConUnNombre: 'IngresarComprar' conUnIdActividad: 2 conUnHorario: 'mediodia'.
+
+unaAct6:=Actividad  crearUnaActividadConUnNombre: 'IngresarNadar' conUnIdActividad: 3 conUnHorario: 'mediodia'.
+
+collAct456 add:unaAct4.
+collAct456 add:unaAct5.
+collAct456 add:unaAct6.
+
+
+
+unaExcursionN1:= ExcursionesOpc crearUnaExcursionConUnNombre: 'Excursiones del dia' conUnId: 1 conUnaCollActividad: collAct456 conUnPrecio: 50000 conUnaFecha: f1.
+Transcript cr.
+unaExcursionN2:= ExcursionesOpc crearUnaExcursionConUnNombre: 'Excursiones de tarde' conUnId: 2 conUnaCollActividad: collAct123 conUnPrecio: 8000 conUnaFecha: f2. 
+Transcript cr.
+unaExcursionN3:= ExcursionesOpc crearUnaExcursionConUnNombre: 'Excursiones de tarde' conUnId: 3 conUnaCollActividad: unaAct4  conUnPrecio: 8000 conUnaFecha: f3. 
+Transcript cr.
+"fin actividades"
+etapa1:= Etapa crearUnaEtapaConNombreCiudad:'CiudadN1' conUnaFechaLLegada: f1 conUnaCantidadDias: 10 conUnHotel: 'Hotel1' conUnaListaActidades: collAct456  conUnTipoPension: 'Pension n1' conUnaExcursionOpcional: unaExcursionN1.
+etapa1 setAddExcursionOpc: unaExcursionN2.
+Transcript cr.
+etapa2:= Etapa crearUnaEtapaConNombreCiudad:'CiudadN2' conUnaFechaLLegada: f2 conUnaCantidadDias: 15 conUnHotel: 'Hotel2' conUnaListaActidades: collAct123   conUnTipoPension: 'Pension n2'conUnaExcursionOpcional:unaExcursionN2.
+Transcript cr.
+etapa2 setAddExcursionOpc: unaExcursionN3.
+etapa3:= Etapa crearUnaEtapaConNombreCiudad:'CiudadN3' conUnaFechaLLegada: f3 conUnaCantidadDias: 60 conUnHotel: 'Hotel3' conUnaListaActidades: unaAct4   conUnTipoPension: 'Pension n3'conUnaExcursionOpcional:unaExcursionN2.
+Transcript cr.
+etapa3 setAddExcursionOpc: unaExcursionN3.
+unViajeOrganizado01:= unaEmpresa crearUnViajeOrganizadoConUnNombre: 'MEXICO' conUnCostoPorPersona: 500 conUnImporteImpuesto: 250 conUnaCantidadDuracion: 10  conUnaEtapaViaje: etapa1 conUnaCollFechaViajeSalida: collFechaViajeOrganizado1.
+
+unViajeOrganizado01 setAddEtapaViaje: etapa2.
+unViajeOrganizado01 setAddEtapaViaje: etapa3.
+Transcript cr.
+collFechaViajeOrganizado2:= OrderedCollection new.
+fechaConUnCupo5 := FechaViajeOrganizado crearUnaFechaDeSalidaDeOrganizacion: f4 conUnCupoDePersona: 10.
+collFechaViajeOrganizado2 add: fechaConUnCupo5.
+collFechaViajeOrganizado2 add:fechaConUnCupo1.
+
+unViajeOrganizado02:=unaEmpresa crearUnViajeOrganizadoConUnNombre: 'ITALIA' conUnCostoPorPersona: 5000 conUnImporteImpuesto: 2000 conUnaCantidadDuracion: 10  conUnaEtapaViaje: etapa2 conUnaCollFechaViajeSalida: collFechaViajeOrganizado2.
+unViajeOrganizado02 setAddEtapaViaje: etapa3.
+collFechaViajeOrganizado3:= OrderedCollection new.
+collFechaViajeOrganizado3 add: fechaConUnCupo5.
+Transcript cr.
+collFechaViajeOrganizado3 add:fechaConUnCupo2.
+
+unViajeOrganizado03:= unaEmpresa crearUnViajeOrganizadoConUnNombre: 'LONDRES' conUnCostoPorPersona: 500 conUnImporteImpuesto: 250 conUnaCantidadDuracion: 10  conUnaEtapaViaje: etapa2 conUnaCollFechaViajeSalida: collFechaViajeOrganizado3.
+Transcript cr.
+"Fin Viajes organizados".
+"2)a. Generar Nuevos contratos"
+f5:=Date newDay: 30 month: 9 year: 2023.
+f6:=Date newDay: 25 month: 8year: 2023.
+f7:=Date newDay: 26 month:8 year: 2023.
+f8:=Date newDay: 30 month:7 year: 2023.
+
+ContratoN1:=unaEmpresa crearUnContratoConUnIdDeContrato: 12345 conUnCliente: clienteN1 conUnViaje: unViajeEspecial01 conUnaFechaDeContrato: f5 conUnaCantidadPersonas: 3.
+Transcript cr.
+
+
+ContratoN2:=unaEmpresa crearUnContratoFlexibleConUnIdDeContrato: 9933 conUnCliente: clienteN3 conUnViaje: unViajeOrganizado01 conUnaFechaDeContrato: f5 conUnaCantidadCuota: 2 conUnaCantidadPersonas: 10 conUnMontoFlexible: 1000.
+Transcript cr.
+ContratoN3:=unaEmpresa crearUnContratoFlexibleConUnIdDeContrato: 1111 conUnCliente: clienteN1 conUnViaje: unViajeOrganizado02 conUnaFechaDeContrato: f8 conUnaCantidadCuota: 3 conUnaCantidadPersonas: 2 conUnMontoFlexible: 1000.
+Transcript cr.
+
+ContratoN4:=unaEmpresa crearUnContratoFlexibleConUnIdDeContrato: 456 conUnCliente: clienteN2 conUnViaje: unViajeOrganizado02 conUnaFechaDeContrato: f8 conUnaCantidadCuota: 4 conUnaCantidadPersonas: 2 conUnMontoFlexible: 1000.
+Transcript cr.
+ContratoN5:=unaEmpresa crearUnContratoConUnIdDeContrato: 12 conUnCliente: clienteN2 conUnViaje: unViajeEspecial01 conUnaFechaDeContrato: f8 conUnaCantidadPersonas: 3.
+Transcript cr.
+"2)b. Ver la informacion de todos los viajes disponibles de fecha1 a fecha2"
+"Estado: Ok".
+Transcript cr.
+unaEmpresa obtenerViajePorRangoInicio:fechaInicio conFechaFin: fechaFin.
+Transcript cr.
+"2)c. Revisar cuales clientes tienen al menos una cuota proxima a vencer, criterio faltan menos de 6 dias para la fecha del vencimiento"
+unaEmpresa clientesProximosAvencer.
+Transcript cr.
+"Fin de 2)c"
+
+"2)f. Agregar Excursion adicional"
+"italia ->unViajeOrganizado02 -> contraton4.  dni CLiente 852 ->clienteN2 (maria) "
+
+unaEmpresa agregarExcursionConIdExcursion: 2 conUnIdViajeNombre: 'ITALIA' conUnIdCliente: 852.
+Transcript cr.
+
+unaEmpresa agregarExcursionConIdExcursion: 3 conUnIdViajeNombre: 'ITALIA' conUnIdCliente: 852.
+Transcript cr.
+"2)d Realizar el pago de una cuota o cuotas segun corresponda"
+unaEmpresa realizarPagoCuotaContratoID_y_conIdCliente: 741 conUnIdContrato: 12345.
+Transcript cr.
+"clienteN1=> idContrato 1111 idCliente=> 741 y un numero de cuota a pagar.".
+unaEmpresa realizarPagoCuotaContratoID_y_conIdCliente: 741 conUnIdContrato: 1111 conUnaCantidadDeCuota: 2.
+Transcript cr.
+"Fin de 2b)"
+unaEmpresa realizarEfectivizacionConUnCliente: 741 conUnIdViaje: 'ITALIA'.
+Transcript cr.
+"Realizar el pago de una Excursion para ver los cambios con el mensaje de efectivizacion".
+"ContratoN4.=> idContrato 456 y idExcursionesOpc 2 y 3  y cliente 852".
+unaEmpresa realizarElPagoDeExcursionOpcionalPorIdExcursion: 2 conUnIdCliente: 852 conUnIdContrato: 456.
+Transcript cr.
+unaEmpresa realizarElPagoDeExcursionOpcionalPorIdExcursion: 3 conUnIdCliente: 852 conUnIdContrato: 456.
+Transcript cr.
+unaEmpresa  realizarPagoCuotaContratoID_y_conIdCliente: 852 conUnIdContrato: 456 conUnaCantidadDeCuota: 4.
+Transcript cr.
+unaEmpresa realizarEfectivizacionConUnCliente: 852 conUnIdViaje: 'ITALIA'.
+Transcript cr.
+
+"Efectivizacion de contrato (verifico con dni cliente y idNombreViaje, si cumple con las condiciones para que realize dicho viaje. Caso afirmativo, el cliente pasa a a ser un Cliente Frecuente con millas, caso contratio, queda como esta."
+
+"caso positivo"
+unaEmpresa realizarPagoCuotaContratoID_y_conIdCliente: 741 conUnIdContrato: 1111 conUnaCantidadDeCuota: 3.
+Transcript cr.
+"caso falso"
+unaEmpresa realizarPagoCuotaContratoID_y_conIdCliente: 741 conUnIdContrato: 12.
+Transcript cr.
+unaEmpresa realizarEfectivizacionConUnCliente: 741 conUnIdViaje: 'ITALIA'.
+Transcript cr.
+
+"2_e) cambio de fecha de viaje por contrato".
+"caso positivo"
+unaEmpresa realizarUnCambioDeFechaDeViaje: f3 conUnIdCliente: 963 conUnIdNombreViaje: 'MEXICO'.
+Transcript cr.
+"caso negativo"
+unaEmpresa realizarUnCambioDeFechaDeViaje: f8 conUnIdCliente: 963 conUnIdNombreViaje: 'MEXICO'.
+Transcript cr.
+
+"2_g) operaciones de viaje".
+unaEmpresa darDeBajaViajeConNombreViaje: 'ITALIA'.
+Transcript cr.
+unaEmpresa modificarPrecioDeUnViajeConUnPrecio: 777 conUnIdNombreViaje: 'Japon'.
+
+
+"fin"
+
+

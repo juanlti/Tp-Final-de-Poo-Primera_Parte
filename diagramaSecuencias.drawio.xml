@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2023-09-02T16:59:02.767Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.7.1" etag="wF6pSltDwm_-V-NgQVT7" type="google">
+  <diagram name="Página-1" id="m6MvCUBCMqcJZuh4tcgr">
+    <mxGraphModel dx="4327" dy="1913" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="150" y="120" width="180" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="2" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-240" y="240" as="sourcePoint" />
+            <mxPoint x="80" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4" value="agregarExcursionConIdExcursion( unIdExcursion, unIddViajeNombre, unDniCliente)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="210" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="2" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="360" as="sourcePoint" />
+            <mxPoint x="360" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="360" />
+              <mxPoint x="360" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" value="obtenerClientePorId(unDniCliente)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="328" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="excursionAgregada&amp;lt;- false" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="298" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="480" width="150" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="sI unCliente no es nulo&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="450" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="520" as="sourcePoint" />
+            <mxPoint x="249" y="570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="520" />
+              <mxPoint x="370" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="obtenerContratoPorIdNonbreViaje(unIdVijaeNombre)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="490" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="630" width="40" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="unContrato no es nulo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="95" y="600" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="540" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="excursionAgregada&amp;lt;- unContrato verificarViajeOrganizado_y_agregarExcursion(unIdExcursion,unViajeNombre)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="630" width="620" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="excursionAgregada si es True: [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="660" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="respuesta&amp;lt;- &#39;Excursion agregada con exito&#39;]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="660" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="excursionAgreagada si es False: [respuesta&amp;lt;- &#39;No es posible agregar la excursion&#39;]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="690" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="respuesta" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="820" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="840" as="sourcePoint" />
+            <mxPoint x="110" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2420" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="140" y="920" width="180" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="23" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="1040" as="sourcePoint" />
+            <mxPoint x="80" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="crearUnContratoConUnIdDeContrato(unIdContrato,unCliente,unViaje,unaFechaDeContrato,unaCantidadDePersonas)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="1000" width="650" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="unContrato&amp;lt;- nil" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1090" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="1200" as="sourcePoint" />
+            <mxPoint x="229" y="1250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="1200" />
+              <mxPoint x="470" y="1250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" value="crearContrato(unIdContrato, unaFechaDeContrato,unaCantidadDePersonas,unViaje)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1169" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1220" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="collContrato add:unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1290" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="unCliente add: unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1320" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="collCliente add: unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1350" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="23" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="1490" as="sourcePoint" />
+            <mxPoint x="80" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="34" value="unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1390" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="A" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-428" y="950" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1370" y="200" width="180" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="36" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1250" y="320" as="sourcePoint" />
+            <mxPoint x="1300" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38" value="darDeBajaViajeConNombreViaje(unIdNombreViaje)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="290" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1461" y="520" as="sourcePoint" />
+            <mxPoint x="1460" y="570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1701" y="520" />
+              <mxPoint x="1701" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" value="obtenerViajePorIdNombre: (unIdNombreViaj)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="490" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="eliminarUnViaje" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="540" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1275" y="610" width="175" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="eliminarUnViaje no es Nulo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="580" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="nuevaCollContratosEliminar&amp;lt;= &#39; &#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="640" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="recorrer unContrato en &lt;br&gt;collContrato hasta terminar" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="640" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="680" width="30" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="unContrato: Contrato" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1800" y="200" width="180" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="47" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1460" y="720" as="sourcePoint" />
+            <mxPoint x="1510" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="49" value="obtenerContratoPorIdNombreViaje:(unIdNombreViaje)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="690" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1889.5" y="760" as="sourcePoint" />
+            <mxPoint x="1459.3888888888887" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51" value="T/F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="730" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="Si T/F es True [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="770" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="nuevaCollContratosEliminar &amp;lt;- add: unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="790" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="collViaje remove: eliminarUnViaje" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="860" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="collContratos removeAll: nuevaCollContratosEliminar" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="890" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="respuesta:Transcript&amp;lt;- &#39; viaje eliminado&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="920" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="respuesta:Transcript&amp;lt;- &#39; viaje no eliminado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="450" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="36" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1290" y="1070" as="sourcePoint" />
+            <mxPoint x="1340" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59" value="respuesta" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="990" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="G" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="170" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1360" y="1169" width="180" height="571" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="61" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1241" y="1280" as="sourcePoint" />
+            <mxPoint x="1291" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="63" value="obtenerViajesPorRangoDeFecha(fechaInicio,fechaFin)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="1250" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="collViajesPorRango&amp;lt;- &#39;&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="1310" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="65" value="unViaje: Viaje" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1860" y="1169" width="180" height="361" as="geometry" />
+        </mxCell>
+        <mxCell id="66" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="65" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1450" y="1440" as="sourcePoint" />
+            <mxPoint x="1500" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="67" value="obtenerViajePorRangoInicio(fechaInicio,fechaFin)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="1400" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="68" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="1400" width="30" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="69" value="recorrer unViaje en &lt;br&gt;collViaje hasta terminar" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1430" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="70" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1949.4999999999995" y="1520" as="sourcePoint" />
+            <mxPoint x="1449.3235294117649" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="71" value="unV" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="1490" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="72" value="Si unV no es nulo [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="1540" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="collViajesPorRango add: unV" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1485" y="1580" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="74" value="resultado&amp;lt;- &#39; &#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1465" y="1334.5" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="75" value="resultado&amp;lt;- resultado, unViaje getNombre asString, &#39; &#39;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1485" y="1610" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="76" value="resultado &amp;lt;- Transcript show: resultado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="1680" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="77" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1449.5" y="1716" as="sourcePoint" />
+            <mxPoint x="1190" y="1716" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78" value="B" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="1169" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="130" y="1560" width="180" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="80" value="c" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="1590" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="81" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="79" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-35" y="1670" as="sourcePoint" />
+            <mxPoint x="15" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="82" value="clientesProximosAvencer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1640" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="83" value="unCliente: Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="560" y="1560" width="180" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="84" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="83" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="1800" as="sourcePoint" />
+            <mxPoint x="270" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="85" value="obtenerClientePorVencimiento" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="345" y="1770" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="86" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1760" width="50" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="87" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="649.4999999999995" y="1873" as="sourcePoint" />
+            <mxPoint x="219.25" y="1873" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="88" value="unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1840" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="89" value="Si unCliente no es nulo [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1884" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="90" value="]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="810" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="91" value="]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="1610" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="92" value="]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1960" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="93" value="respuesta&amp;lt;- &#39; &#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1680" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="94" value="respuesta &amp;lt;- repuesta + unCliente getNombre" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1914" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="95" value="recorrer unCliente en collCliente&lt;br&gt;&amp;nbsp;mientras que sea verdadero" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1720" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="96" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="79" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="2130" as="sourcePoint" />
+            <mxPoint x="-40" y="2080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="97" value="collCLienteProximoAvencer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="2050" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="98" value="Transcript show: &#39;Los Clientes proximo a vencer, son: &#39; + repuesta." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="2020" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="99" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1370" y="1840" width="180" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="100" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="940" y="1959" as="sourcePoint" />
+            <mxPoint x="1459.5" y="1959" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="101" value="realizarElPagoDeExcursionOpcionalPorIdExcursion(idExcursion,idCliente,idContrato)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="970" y="1930" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="102" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1461" y="2080" as="sourcePoint" />
+            <mxPoint x="1460" y="2130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1581" y="2080" />
+              <mxPoint x="1581" y="2130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="103" value="obtenerClientePorId(unDniCliente)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1455" y="2050" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="104" value="unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="2100" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="105" value="unCliente si no es nulo [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="2150" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="106" value="unCliente: Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1760" y="1840" width="180" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="107" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1460" y="2235" as="sourcePoint" />
+            <mxPoint x="1849.5" y="2235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="108" value="pagarExcursionPorIdExcursion(idExcursion,idDeContrato)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="2200" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="109" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1849.5" y="2282" as="sourcePoint" />
+            <mxPoint x="1459.071428571428" y="2282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="110" value="pagado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="2250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="111" value="pago es True [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="2300" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="112" value="respuesta&amp;lt;- &#39; La excursion&amp;nbsp; &#39; + idExcursion + &#39; no fue pagada &#39; ." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1565" y="2330" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="113" value="respuesta&amp;lt;- &#39; La excursion&amp;nbsp; &#39; + idExcursion + &#39;fue pagada &#39; ." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="2300" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="114" value="]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="2300" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="115" value="pagado es False [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1465" y="2330" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="116" value="]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="2330" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="117" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="99" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1300" y="2430" as="sourcePoint" />
+            <mxPoint x="1350" y="2380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="118" value="respuesta" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="2338" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="119" value="D" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1245" y="1798" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="120" value="&amp;nbsp;Pago de Excursion&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1275" y="1798" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="121" value="realizarPagoCuotaContratoID_y_conIdCliente(unDni,unIdContrato)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="2250" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="122" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="120" y="2160" width="180" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="123" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="122" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="2280" as="sourcePoint" />
+            <mxPoint x="-80" y="2230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="124" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="211" y="2398" as="sourcePoint" />
+            <mxPoint x="210" y="2448" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="331" y="2398" />
+              <mxPoint x="331" y="2448" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="125" value="obtenerClientePorId(unDniCliente)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="2360" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="126" value="unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="390" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="127" value="unCliente no es nulo&amp;nbsp; [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="2490" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="128" value="unCliente: Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="550" y="2160" width="180" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="129" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="128" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="2560" as="sourcePoint" />
+            <mxPoint x="260" y="2510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="130" value="pagarCuotaConIdContrato:(unIdContrato)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="2520" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="131" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="639.4999999999995" y="2598.9999999999995" as="sourcePoint" />
+            <mxPoint x="208.96153846153857" y="2598.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="132" value="cuotaPagada" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="369" y="2570" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="133" value="cuotaPagada es True [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="2610" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="134" value="respuesta&amp;lt; -- &#39; &#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="2300" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="135" value="respuesta&amp;lt;- Transcript show: &#39;La cuota del contrato &#39; + unIdContrato&amp;nbsp; + &#39; fue pagada con exito&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="2640" width="520" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="136" value="]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="2640" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="137" value="cuotaPagada es False [&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="2670" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="138" value="respuesta&amp;lt;- Transcrip show: &#39;La cuota del contrato &#39; + unIdContrato&amp;nbsp; + &#39; fue pagada con exito&#39; ]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="2700" width="520" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="139" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="122" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="2810" as="sourcePoint" />
+            <mxPoint x="70" y="2760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="140" value="respuesta" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="2730" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="141" value="D" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="2170" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="142" value="&amp;nbsp;Pago de cuota contrato&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="2170" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="143" value="unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="2680" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="144" value="realizarPagoCuotaContratoID_y_conIdCliente(unDni,unIdContrato,unaCantidadDeCuota)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="930" y="2500" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="145" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1340" y="2420" width="180" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="146" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="145" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="2540" as="sourcePoint" />
+            <mxPoint x="1140" y="2490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="147" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1431" y="2658" as="sourcePoint" />
+            <mxPoint x="1430" y="2708" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1551" y="2658" />
+              <mxPoint x="1551" y="2708" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="148" value="unCliente no es nulo&amp;nbsp; [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1425" y="2730" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="149" value="unCliente: Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="1770" y="2420" width="180" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="150" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="149" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1430" y="2820" as="sourcePoint" />
+            <mxPoint x="1480" y="2770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="151" value="pagarCuotaConIdContrato:(unIdContrato, unaCantidadDeCuota)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1475" y="2780" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="152" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1859.4999999999995" y="2858.9999999999995" as="sourcePoint" />
+            <mxPoint x="1428.9615384615386" y="2858.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="153" value="clienteEncontradoParaPagarSuCuota" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1524" y="2830" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="154" value="clienteEncontradoParaPagarSuCuota&amp;nbsp; es True [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="2870" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="155" value="respuesta&amp;lt; -- &#39;no fue posible realizar el pago de la cuota &#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="2570" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="156" value="respuesta&amp;lt;- Transcript show: &#39;Las cuotas del contrato &#39; + unIdContrato&amp;nbsp; + &#39; fue pagada con exito&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1435" y="2900" width="530" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="157" value="]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="2900" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="158" value="clienteEncontradoParaPagarSuCuota&amp;nbsp; es False [&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="2930" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="159" value="respuesta&amp;lt;- Transcrip show: &#39;Las cuotas del contrato &#39; + unIdContrato&amp;nbsp; + &#39; fue pagada con exito&#39; ]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="2960" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="160" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="145" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1240" y="3070" as="sourcePoint" />
+            <mxPoint x="1290" y="3020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="161" value="respuesta" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="2990" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="162" value="D" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="2430" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="163" value="&amp;nbsp;Pago de cuota contrato Flexible&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="2430" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="164" value="obtenerClientePorId(unDniCliente)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="2630" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="165" value="realizarEfectivizacionConUnCliente(unIdCliente, unIdNombreViaje)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="320" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="166" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="2240" y="200" width="180" height="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="167" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="166" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2040" y="358" as="sourcePoint" />
+            <mxPoint x="2090" y="308" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="168" value="E" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="2210" y="150" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="169" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2336" y="440" as="sourcePoint" />
+            <mxPoint x="2335" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2456" y="440" />
+              <mxPoint x="2456" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="170" value="obtenerClientePorId(unDniCliente)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="410" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="171" value="unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2355" y="460" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="172" value="obtenerContratoPorIdNombreViaje:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="570" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="173" value="unCliente: Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="2700" y="200" width="100" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="174" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="173" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2330" y="598" as="sourcePoint" />
+            <mxPoint x="2380" y="548" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="175" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="173" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2649.500000000001" y="637.9999999999998" as="sourcePoint" />
+            <mxPoint x="2329.5476190476193" y="637.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="176" value="unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="610" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="177" value="unContrato&amp;nbsp; si no es nulo [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2340" y="690" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="178" value="unContrato: Contrato" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="2810" y="200" width="150" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="179" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="178" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2330" y="760" as="sourcePoint" />
+            <mxPoint x="2380" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="180" value="tieneViajeOrganizado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2481" y="730" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="181" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2869.500000000001" y="799.9999999999998" as="sourcePoint" />
+            <mxPoint x="2329.5476190476193" y="799.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="182" value="esUnViajeOrganizado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2481" y="770" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="183" value="verificarDisponibilidadDeViaje." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2621" y="810" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="184" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2330" y="840" as="sourcePoint" />
+            <mxPoint x="2870" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="185" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="178" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2870" y="880" as="sourcePoint" />
+            <mxPoint x="2329.997619047619" y="879.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="186" value="puedeViajar" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2671" y="850" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="187" value="respuesta&amp;lt;- &#39;El cliente&amp;nbsp; &#39;+ unIdCliente + &#39; no cumple los requisitos para viajar&#39;&amp;nbsp;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2321" y="360" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="188" value="respuesta&amp;lt; -- &#39;el cliente&amp;nbsp; &#39;+ unCliente getNombre + &#39; cumple con los requisitos para viajar ( efectivizacion) &#39; + &lt;br&gt;unNombreViaje + &#39; ya no pertecene al cliente, porque ya viajo&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="920" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="189" value="puedeViajar es True" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2185" y="890" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="190" value="unCliente: Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="3000" y="200" width="120" height="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="191" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="190" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2340" y="1000" as="sourcePoint" />
+            <mxPoint x="2880" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="192" value="removerContratoYagregarContrato(unContrato)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2490" y="970" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="193" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3059.500000000001" y="1039.9999999999998" as="sourcePoint" />
+            <mxPoint x="2329.5476190476193" y="1039.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="194" value="void" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="1010" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="195" value="esUnViajeOrganizado es True" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="1050" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="196" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="920" width="30" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="197" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2340" y="1104.52" as="sourcePoint" />
+            <mxPoint x="3060" y="1104.52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="198" value="esClienteFrecuente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2600" y="1080" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="199" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3059.9500000000007" y="1142.5199999999998" as="sourcePoint" />
+            <mxPoint x="2329.997619047619" y="1142.5199999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="200" value="T/F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2640" y="1120" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="201" value="si T/F es False&amp;nbsp; [&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2340" y="1160" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="202" value="respuesta&amp;lt; -- &#39;el cliente&amp;nbsp; &#39;+ unCliente getNombre + &#39; cumple con los requisitos para viajar ( efectivizacion) &#39; +&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;unNombreViaje + &#39; ya no pertecene al cliente, porque ya viajo. Y ahora es Cliente Frecuente&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="1190" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="203" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="166" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2330" y="1280" as="sourcePoint" />
+            <mxPoint x="2440" y="1330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2660" y="1280" />
+              <mxPoint x="2660" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="204" value="cambiarDeCliente_a_clienteFrecuente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="1250" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="205" value="collContratoRemover: unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="3060" y="1000" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="206" value="void" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="1290" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="207" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2330" y="1400" as="sourcePoint" />
+            <mxPoint x="2170" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="208" value="Transcript show: respuesta" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2170" y="1370" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="209" value="realizarUnCambioDeFechaDeViaje:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2111" y="1640" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="210" value="Efectivizacion Cliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="150" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="211" value="Efectivizacion de contrato (cambio de fecha, caso contrario, una devolucion)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="2150" y="1520" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="212" value="E" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="1520" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="213" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="2240" y="1569.5" width="180" height="1060.5" as="geometry" />
+        </mxCell>
+        <mxCell id="214" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="213" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2140" y="1680" as="sourcePoint" />
+            <mxPoint x="2190" y="1630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="215" value="unContrato: Contrato" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="2730" y="1569.5" width="130" height="505.25" as="geometry" />
+        </mxCell>
+        <mxCell id="216" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2336" y="1790" as="sourcePoint" />
+            <mxPoint x="2335" y="1840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2456" y="1790" />
+              <mxPoint x="2456" y="1840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="217" value="obtenerClientePorId(unDniCliente)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="1760" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="218" value="unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2355" y="1810" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="219" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2330" y="1889" as="sourcePoint" />
+            <mxPoint x="2329" y="1939" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2450" y="1889" />
+              <mxPoint x="2450" y="1939" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="220" value="obtenerContratoPorIdNonbreViaje(unIdVijaeNombre)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2320" y="1859" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="221" value="unContrato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2350" y="1909" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="222" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="2765" width="20" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="223" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2302" y="1998" width="19" height="562" as="geometry" />
+        </mxCell>
+        <mxCell id="224" value="unContrato no es nulo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2185" y="1970" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="225" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="215" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2325" y="2025.29" as="sourcePoint" />
+            <mxPoint x="2639.5" y="2025.29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="226" value="tieneViajeOrganizado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2400" y="2000" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="227" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="215" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2740" y="2090" as="sourcePoint" />
+            <mxPoint x="2329.0714285714284" y="2076" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="228" value="esUnViajeOrganizado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2410" y="2050" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="229" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="231" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2330" y="2160" as="sourcePoint" />
+            <mxPoint x="2600" y="2160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="230" value="&quot;verifico si viaje orgnizado tiene en su colecion de fechasDisponible, la nueva fecha ingresada por parametro&quot;&lt;br style=&quot;font-size: 13px;&quot;&gt;&quot;viaje Organizado tiene la fecha, entonces se realiza el cambio&amp;nbsp; con exito. Caso contrato, no es posible,&lt;br style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp;y se calcula una devolcion segun el tipo de cliente y demas factores&quot;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="2320" y="2180" width="650" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="231" value="unViaje: Viaje Orgnizado" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="2870" y="1569.5" width="180" height="730.5" as="geometry" />
+        </mxCell>
+        <mxCell id="232" value="verificarFechaDisponibleEnViaje(unaNuevaFecha)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2500" y="2130" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="233" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="231" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2771" y="2283" as="sourcePoint" />
+            <mxPoint x="2331" y="2283" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="234" value="fechaCambiada" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2520" y="2250" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="235" value="fechaCambiada es True [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2340" y="2308" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="236" value="respuesta&amp;lt;- &#39; su viaje fue reprogramado con exito&#39; ]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="2308" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="237" value="fechaCambiada es False: [" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2340" y="2360" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="238" value="respuesta&amp;lt;-- &#39;No fue posible reprogramar su viaje, porque el viaje no contiene la fecha solicitada en su coleccion de fechas, por lo tanto obtene una devolucion&#39; + unaDevolucion&amp;nbsp;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2325" y="2520" width="970" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="239" value="unaDevolucion&amp;lt;- 0." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2321" y="1690" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="240" value="calcularDevolucionConUnContrato( unContrato)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="2400" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="241" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="242" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2330" y="2428.57" as="sourcePoint" />
+            <mxPoint x="2960" y="2428.57" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="242" value="unCliente: Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="3090" y="1569.5" width="180" height="940.5" as="geometry" />
+        </mxCell>
+        <mxCell id="243" value="Mensaje polimorfico puro&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="3190" y="2440" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="244" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3179.5" y="2484" as="sourcePoint" />
+            <mxPoint x="2329.0714285714284" y="2484" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="245" value="unaDevolucion" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2720" y="2460" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="246" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="213" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2255.5" y="2600" as="sourcePoint" />
+            <mxPoint x="2111" y="2600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="247" value="Transcript show: respuesta" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2150" y="2570" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="248" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;respuesta&amp;lt;-- &#39;Unicamente los viajes de tipo Organizados estan,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;habilitados para reprogramar su fecha de salida &#39;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="1714" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="249" value="CONTRATO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="-398" y="950" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="250" value=":EmpresaTurismo" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="128" y="2830" width="180" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="251" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" target="250" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-142" y="2950" as="sourcePoint" />
+            <mxPoint x="68" y="2900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="252" value="crearUnContratoConUnIdDeContrato(unIdContrato,unCliente,unViaje,unaFechaDeContrato,unaCantidadDePersonas, conUnaCantidadDeMillas)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="2908" width="790" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="253" value="unContrato&amp;lt;- nil" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="228" y="3000" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="254" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="218" y="3110" as="sourcePoint" />
+            <mxPoint x="217" y="3160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="458" y="3110" />
+              <mxPoint x="458" y="3160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="255" value="crearContrato(unIdContrato, unaFechaDeContrato,unaCantidadDePersonas,unViaje,conUnaCantidadDeMillas)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="3070" width="610" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="256" value="unContratoFlexible" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="278" y="3130" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="257" value="collContrato add:unContratoFlexible" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="228" y="3200" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="258" value="unCliente add: unContratoFlexible" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="3230" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="259" value="collCliente add: unCliente" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="3260" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="260" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" source="250" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="18" y="3400" as="sourcePoint" />
+            <mxPoint x="68" y="3350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="261" value="unContratoFlexible" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="3310" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="262" value="A" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="2810" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="263" value="CONTRATO FLEXIBLE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="2810" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
